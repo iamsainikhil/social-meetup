@@ -12,7 +12,7 @@ Evaluation & Website Developer: Sai Nikhil
 
 Technologies used: HTML, CSS, JAVASCRIPT, JQUERY, PHP, MYSQL.
 
-Website Tools used: Notepad++, Jotform FileZilla, PHPmyAdmin, cPanel.
+Website Tools used: Brackets, Jotform FileZilla, PHPmyAdmin, cPanel.
 
 Prototype tools used: MarvelApp, Mockups 3.
 
