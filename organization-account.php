@@ -10,7 +10,7 @@ if(isset($_POST['signupSubmit'])){
         //password and confirm password comparison
         if($_POST['password'] !== $_POST['confirm_password']){
             $sessData['status']['type'] = 'error';
-            $sessData['status']['msg'] = 'Confirm password must match with the password.';
+            $sessData['status']['msg'] = 'Confirm password must match with the password.'; 
         }else{
             //check whether user exists in the database
             $prevCon['where'] = array('email'=>$_POST['email']);
@@ -41,11 +41,11 @@ if(isset($_POST['signupSubmit'])){
         }
     }else{
         $sessData['status']['type'] = 'error';
-        $sessData['status']['msg'] = 'All fields are mandatory, please fill all the fields.';
+        $sessData['status']['msg'] = 'All fields are mandatory, please fill all the fields.'; 
     }
     //store signup status into the session
     $_SESSION['sessData'] = $sessData;
-    $redirectURL = ($sessData['status']['type'] == 'success')?'index.php':'registration.php';
+    $redirectURL = ($sessData['status']['type'] == 'success')?'organization-index.php':'organization-register.php';
     //redirect to the home/registration page
     header("Location:".$redirectURL);
 }elseif(isset($_POST['loginSubmit'])){
@@ -67,11 +67,11 @@ if(isset($_POST['signupSubmit'])){
             $sessData['status']['msg'] = 'Welcome '.$userData['first_name'].'!';
         }else{
             $sessData['status']['type'] = 'error';
-            $sessData['status']['msg'] = 'Wrong email or password, please try again.';
+            $sessData['status']['msg'] = 'Wrong email or password, please try again.'; 
         }
     }else{
         $sessData['status']['type'] = 'error';
-        $sessData['status']['msg'] = 'Enter email and password.';
+        $sessData['status']['msg'] = 'Enter email and password.'; 
     }
     //store login status into the session
     $_SESSION['sessData'] = $sessData;
