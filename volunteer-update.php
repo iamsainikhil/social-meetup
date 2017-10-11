@@ -10,7 +10,7 @@ $sessData = !empty($_SESSION['sessData'])?$_SESSION['sessData']:'';
             $conditions['return_type'] = 'single';
             $userData = $user->getRows($conditions);
 
-$con=mysqli_connect("sql103.ezyro.com","ezyro_19437283","sainikhil12","ezyro_19437283_meetup");
+$con=mysqli_connect("dbhost","username","dbpassword","dbname");
 }
 if(isset($_POST['edit'])){
 $first_name = $_POST['first_name'];

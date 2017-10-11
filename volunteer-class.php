@@ -1,11 +1,11 @@
 <?php
 
 class User{
-    private $dbHost     = "sql103.ezyro.com";
-    private $dbUsername = "ezyro_19437283";
-    private $dbPassword = "sainikhil12";
-    private $dbName     = "ezyro_19437283_meetup";
-    private $userTbl    = "volunteer";
+    private $dbHost     = "dbhost";
+    private $dbUsername = "dbusername";
+    private $dbPassword = "dbpassword";
+    private $dbName     = "dbname";
+    private $userTbl    = "dbtablename";
     
     public function __construct(){
         if(!isset($this->db)){
